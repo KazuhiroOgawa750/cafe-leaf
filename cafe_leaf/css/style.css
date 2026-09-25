@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #2f352f;
+    background: #f8f6f0;
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+    line-height: 1.8;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #dedbd1;
+}
+
+.header-inner {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo img {
+    width: 170px;
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+nav a.current {
+    border-bottom: 2px solid #64765d;
+}
+
+.hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    left: 8%;
+    bottom: 12%;
+    padding: 24px 30px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    letter-spacing: 0.08em;
+}
+
+.hero-text p {
+    margin: 6px 0 0;
+}
+
+.hero-text .eyebrow {
+    margin: 0;
+    color: #687863;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.section-title {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.section-title > p,
+.page-heading > p:first-child {
+    color: #74806d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+}
+
+.section-title h2,
+.page-heading h1 {
+    margin: 4px 0 8px;
+    font-family: Georgia, "Yu Mincho", serif;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 11px 24px;
+    color: #fff;
+    background: #60705a;
+    border-radius: 3px;
+}
+
+.page-heading {
+    padding: 55px 24px;
+    text-align: center;
+    background: #eeece4;
+}
+
+.page-heading h1 {
+    font-size: 38px;
+    letter-spacing: 0.08em;
+}
+
+.page-heading p {
+    margin: 5px 0;
+}
+
+.menu-list {
+    display: grid;
+    gap: 34px;
+}
+
+.menu-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e1ded5;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-card-body {
+    padding: 28px 32px;
+}
+
+.menu-title-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.menu-card h2 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+}
+
+.price {
+    white-space: nowrap;
+    color: #697661;
+    font-weight: bold;
+}
+
+.access-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+}
+
+.access-grid h2 {
+    margin-top: 0;
+    font-family: Georgia, "Yu Mincho", serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e0ddd4;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    width: 32%;
+    background: #f0eee7;
+}
+
+.map {
+    width: 100%;
+    border: 1px solid #ddd9cf;
+}
+
+footer {
+    padding: 25px;
+    color: #fff;
+    background: #3f493d;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+@media (max-width: 720px) {
+    .header-inner,
+    .menu-title-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .hero-text {
+        position: static;
+        background: #fff;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .about-grid,
+    .menu-card,
+    .access-grid {
+        grid-template-columns: 1fr;
+    }
+}
